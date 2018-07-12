@@ -4,27 +4,33 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <!-- <progress class="uk-progress" value="" max=""></progress> -->
 
   {% if title %}
-  <title>Moringa Tribune - {{title}}</title>
+  <title>Maxplash - {{title}}</title>
   {% else %}
-    <title> Moringa Tribune </title>
+    <title> Maxplash </title>
   {% endif %}
 
   {% block styles %}
     {% bootstrap_css %}
     <link rel="stylesheet" href="{% static 'css/basenews.css' %}">
   {% endblock %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.8/css/uikit.min.css" />
 
 </head>
 <body>
     {% include "navbar.html" %}
 
-    {% block content %} <h1 class='text-center'>News for {{date|date:"l d-F Y"}}</h1> {%endblock%}
+    {% block content %} <h1 class='text-center'>Pictures for {{date|date:"l d-F Y"}}</h1> {%endblock%}
 
     {% block scripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      {% bootstrap_javascript %}
     {% endblock %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.8/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.8/js/uikit-icons.min.js"></script>
 </body>
 </html>

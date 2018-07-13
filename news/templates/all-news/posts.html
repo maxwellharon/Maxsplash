@@ -1,0 +1,6 @@
+{% extends 'navbar.html' %}
+{% for post in postss %}
+
+<li>{{post.id}}</li>
+<li><a href="post/{{post.id}}">{{post.title}}</a></li>
+{% endfor %}

@@ -1,30 +1,36 @@
 {%extends 'all-news/base.html'%}
 {% block content %}
-{{ block.super}}
+ {{ block.super}}
 
 <div class="container">
 
-  <!-- Looping through news   -->
-  {% for news_item in news %}
+    <!-- Looping through news   -->
+    {% for news_item in news %}
 
-  <div class="row">
-    <!-- displaying News articles -->
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      <h2 class="text-center"> {{ news_item.title }} </h2>
+    <div class="row">
+        <!-- displaying News articles -->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <h2 class="text-center"> {{ news_item.title }} </h2>
+        </div>
+
+        <!--Display news Article images  -->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <img src="{{news_item.post_image.url}}" class="img-responsive" alt="Image">
+        </div>
+
     </div>
 
-    <!--Display news Article images  -->
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      <img src="{{news_item.article_image.url}}" class="img-responsive" alt="Image">
+    {% empty %}
+    <div class="row">
+        <h2 class="text-center">Sorry,there are no pictures to display :-(</h2>
     </div>
+    {% endfor %}
 
-  </div>
+    {% for post in posts %}
 
-  {% empty %}
-  <div class="row">
-    <h2 class="text-center">There No News Items</h2>
-  </div>
-  {% endfor %}
+    <li>{{post.id}}</li>
+    <li><a href="post/{{post.id}}">{{post.title}}</a></li>
+    {% endfor %}
 
 </div>
 

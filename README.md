@@ -13,7 +13,7 @@
 
 ####
 #### Installation
-* Clone,download or fork the the app from this link
+* Clone,download or fork the the app from this link https://github.com/maxwellharon/Maxsplash
 * Install a virtual environment in your project folder by running the following commands `$sudo apt-get install python3.6-venv` and `$ python3.6 -m venv virtual`.To activate the virtual environment run `$ source virtual/bin/activate`
 * To install Django,run the following command `$ source virtual/bin/activate` then `pip install django==1.11`
 * To confirm whether Django is installed run the python shell by opening the terminal in the project folder and run `python3.6` then `>>> import django` then `>>> django.get_version()`.If Django is present you should get `'1.11.5'`...Congratulations,you now have Django :-)

@@ -17,6 +17,7 @@
 * Install a virtual environment in your project folder by running the following commands `$sudo apt-get install python3.6-venv` and `$ python3.6 -m venv virtual`.To activate the virtual environment run `$ source virtual/bin/activate`
 * To install Django,run the following command `$ source virtual/bin/activate` then `pip install django==1.11`
 * To confirm whether Django is installed run the python shell by opening the terminal in the project folder and run `python3.6` then `>>> import django` then `>>> django.get_version()`.If Django is present you should get `'1.11.5'`...Congratulations,you now have Django :-)
+* To install requirements,go to your shell and enter the command `pip install -r requirements.txt`
 * In the terminal,run the app by running the following command `python3 manage.py runserver`
 * Go to your browser and open the link http://127.0.0.1:5000 or http:///localhost:5000**
 * Enjoy the App :-)...

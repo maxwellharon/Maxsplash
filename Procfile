@@ -1,1 +1,1 @@
-web: gunicorn maxsplash.wsgi --log-file -
+web: gunicorn tribune.wsgi --log-file -

@@ -25,21 +25,14 @@
 ### Important packages used in app development.
 
 ```
-certifi==2018.4.16
-chardet==3.0.4
-click==6.7
-dominate==2.3.1
-Flask==1.0.2
-Flask-Bootstrap4==4.0.2
-Flask-Script==2.0.6
-Flask-SQLAlchemy==2.3.2
-idna==2.6
-itsdangerous==0.24
-Jinja2==2.10
-MarkupSafe==1.0
-requests==2.18.4
-visitor==0.1.3
-Werkzeug==0.14.1
+dj-database-url==0.5.0
+Django==1.11
+django-bootstrap3==10.0.1
+Pillow==5.2.0
+psycopg2==2.7.5
+python-decouple==3.1
+pytz==2018.5
+
 
 ```
 

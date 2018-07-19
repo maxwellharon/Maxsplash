@@ -79,8 +79,8 @@ WSGI_APPLICATION = 'tribune.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'maxsplash',
-        'USER': 'maxwell',
+        'NAME': 'maxsplash2',
+        'USER': 'max',
     'PASSWORD':'1234',
     }
 }

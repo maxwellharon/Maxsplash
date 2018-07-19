@@ -3,6 +3,9 @@ import dj_database_url
 from decouple import config,Csv
 import django_heroku
 
+MODE=config("MODE", default="dev")
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 
 """
@@ -43,7 +46,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -159,9 +161,6 @@ else:
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-    MODE=config("MODE", default="dev")
-    SECRET_KEY = config('SECRET_KEY')
-    DEBUG = config('DEBUG', default=False, cast=bool)
     # development
 
     db_from_env = dj_database_url.config(conn_max_age=500)

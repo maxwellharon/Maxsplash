@@ -1,7 +1,7 @@
 # Maxsplash-V2.0
 ## Maxwell Haron
 #### Maxsplash is a personal gallery whereby one can display images which can be seen by other people who log on to the site.Maxsplash is unique because it uses realtime and displays photos that have been uploaded on that particular day.One can also view photos that have been posted on other days.
-#### The live link to the Maxsplash is :
+#### The live link to the Maxsplash is : https://maxsplash.herokuapp.com/
  15th July 2018 10.18.44
 #### By **Maxwell Haron**
 ## Installation Requirements
